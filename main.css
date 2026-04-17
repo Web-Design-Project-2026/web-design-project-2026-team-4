@@ -1,0 +1,166 @@
+:root {
+    --text: #231f20;
+	--background: #fcf7fa;
+	--buttons: #d8a490;
+	--navbar: #efebce;
+    --inputs: #ffe4e1;
+    --services: #a2a27f;
+    --nimbus: nimbus-sans, sans-serif; 
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    max-width: 1248px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Header */
+header {
+    background-color: var(--navbar);
+    align-self: stretch;
+}
+
+nav{
+    margin: auto;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding: 16px;
+    max-width: 1248px;
+}
+
+#navbar a {
+    font-family: var(--nimbus);
+    font-weight: 300;
+    color: var(--text);
+    text-decoration: none;
+    margin: 4px;
+}
+
+#logo {
+    height: 4rem;
+}
+
+/* Home */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.text-content {
+    margin: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 32pt;
+    color: var(--text);
+}
+
+p {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12pt;
+    color: var(--text);
+}
+
+.testimonial {
+    font-family: maiola, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+button {
+    background-color: var(--buttons);
+    color: var(--text);
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12pt;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.duo-banner {
+    width: 100%;
+    max-width: 1248px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.duo-banner img {
+    width: 100%;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+}
+
+.step {
+    background-color: var(--inputs);
+    padding: 8px;
+}
+
+h3 {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 16pt;
+    color: var(--text);
+    margin: 8px;
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+}
+.package {
+    background-color: var(--services);
+}
+
+/* Footer */
+footer {
+    background-color: var(--buttons);
+    width: 100%;
+}
+.footer-content {
+    padding: 16px;
+}
+.footer-content p {
+    font-size: 8pt;
+}
