@@ -17,11 +17,17 @@ body {
 }
 
 main {
-    max-width: 1248px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+h1 {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 48pt;
 }
 
 
@@ -65,7 +71,7 @@ nav{
 }
 
 .banner img {
-    max-width: 100%;
+    width: 100%;
     max-height: 400px;
     object-fit: cover;
 }
@@ -75,6 +81,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1248px;
 }
 
 h2 {
@@ -84,6 +91,7 @@ h2 {
     text-align: center;
     font-size: 32pt;
     color: var(--text);
+    margin-top: 2rem;
 }
 
 p {
@@ -110,6 +118,7 @@ button {
     border: none;
     border-radius: 8px;
     padding: 8px 16px;
+    margin: 1rem;
 }
 
 .duo-banner {
@@ -164,3 +173,28 @@ footer {
 .footer-content p {
     font-size: 8pt;
 }
+
+/* Services */
+#services {
+    max-width: 1400px;
+}
+.service-card {
+    margin: 0 0 4rem;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#location {
+    grid-template-columns: 6fr 4fr;
+}
+
+.service-text {
+    margin: 0 4rem;
+}
+
+.service-card img {
+    max-width: 100%;
+}
+
