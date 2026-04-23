@@ -24,13 +24,15 @@
         <h1>Contact Us</h1>
         <p>If you'd like to book a session or have any questions about our services or availability, please reach out through the form below.</p>
         <form>
-            <label for="name">Name:</label>
+            <div>
+            <label for="name">Name (required):</label>
             <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            <label for="email">Email:</label>
+            <label for="email">Email (required):</label>
             <input type="text" name="email" id="email" placeholder="Enter your email" required>
-            <label for="subject">Subject:</label>
-            <input type="text" name="subject" id="subject" placeholder="Enter a subject for your message" required>
-            <label for="message">Message:</label>
+            <label for="photographer">Preferred Photographer (not required):</label>
+            <input type="text" name="photographer" id="photographer" placeholder="Enter a subject for your message">
+            </div>
+            <label for="message">Message (required):</label>
             <textarea name="message" id="message"  placeholder="Enter your message" required></textarea>
             <button type="submit">Send</button>
         </form>

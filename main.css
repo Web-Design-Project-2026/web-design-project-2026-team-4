@@ -64,6 +64,18 @@ nav{
     height: 4rem;
 }
 
+/* Footer */
+footer {
+    background-color: var(--buttons);
+    width: 100%;
+}
+.footer-content {
+    padding: 16px;
+}
+.footer-content p {
+    font-size: 8pt;
+}
+
 /* Home */
 .banner {
     width: 100%;
@@ -162,18 +174,6 @@ h3 {
     background-color: var(--services);
 }
 
-/* Footer */
-footer {
-    background-color: var(--buttons);
-    width: 100%;
-}
-.footer-content {
-    padding: 16px;
-}
-.footer-content p {
-    font-size: 8pt;
-}
-
 /* Services */
 #services {
     max-width: 1400px;
@@ -198,3 +198,84 @@ footer {
     max-width: 100%;
 }
 
+.button {
+    display: block;
+    background-color: var(--buttons);
+    color: var(--text);
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16pt;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+/* Portfolio */
+
+#portfolio {
+    max-width: 1248px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap:1rem;
+    margin-bottom: 4rem;
+}
+.thumbnail {
+    padding: 0;
+    margin: 0;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thumbnail:hover {
+    box-shadow: 4px 4px 4px var(--buttons);
+}
+
+.thumbnail img {
+    object-fit: cover;
+    height: 100%;
+    display: block;
+}
+
+#displayed {
+    width: 92%;
+    background-color: var(--inputs);
+    position: absolute;
+    top: 16rem;
+    padding: 4px;
+    display: grid;
+    grid: 1fr / 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#displayed img {
+    width: 100%;
+    grid-area: 1 / 1;
+}
+#displayed button {
+    grid-area: 1 / 1;
+    align-self: start;
+    justify-self: end;
+    border-radius: 100%;
+    padding: 0;
+}
+
+#displayed button img {
+    height: 4rem;
+    display: block;
+}
+
+#hidden {
+    display: none;
+}
