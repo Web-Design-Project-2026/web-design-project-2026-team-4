@@ -28,6 +28,8 @@ h1 {
     font-weight: 300;
     font-style: normal;
     font-size: 48pt;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 
@@ -77,11 +79,16 @@ footer {
 }
 
 /* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .banner {
     width: 100%;
     overflow: hidden;
 }
-
 .banner img {
     width: 100%;
     max-height: 400px;
@@ -131,11 +138,14 @@ button {
     border-radius: 8px;
     padding: 8px 16px;
     margin: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 4px 4px 4px var(--text);
 }
 
 .duo-banner {
     width: 100%;
-    max-width: 1248px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -176,6 +186,10 @@ h3 {
 
 /* Services */
 #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     max-width: 1400px;
 }
 .service-card {
@@ -212,10 +226,19 @@ h3 {
     margin: 1rem;
     text-decoration: none;
 }
+.button:hover {
+    box-shadow: 4px 4px 4px var(--text);
+}
 
 /* Portfolio */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
 
-#portfolio {
+#portfolio-photos {
     max-width: 1248px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -223,6 +246,7 @@ h3 {
     gap:1rem;
     margin-bottom: 4rem;
 }
+
 .thumbnail {
     padding: 0;
     margin: 0;
@@ -237,10 +261,6 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-.thumbnail:hover {
-    box-shadow: 4px 4px 4px var(--buttons);
-}
-
 .thumbnail img {
     object-fit: cover;
     height: 100%;
@@ -258,7 +278,6 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-
 #displayed img {
     width: 100%;
     max-height: 100%;
@@ -271,7 +290,6 @@ h3 {
     border-radius: 100%;
     padding: 0;
 }
-
 #displayed button img {
     height: 2rem;
     display: block;
@@ -279,4 +297,92 @@ h3 {
 
 #hidden {
     display: none;
+}
+
+/* Photographers */
+#photographers {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+.photographer-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.photog-portrait {
+    height: 100%;
+    object-fit: cover;
+    max-width: 50vw;
+}
+.photog-info {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 4rem;
+    height: 80vh;
+}
+
+#contact p {
+    text-align: center;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1248px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+#short-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#long-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12pt;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+input {
+    background-color: var(--inputs);
+    border: none;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    background-color: var(--inputs);
+    border: none;
+    padding: 8px;
+    height: 80px;
 }

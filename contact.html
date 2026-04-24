@@ -21,24 +21,30 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
-        <p>If you'd like to book a session or have any questions about our services or availability, please reach out through the form below.</p>
-        <form>
-            <div>
-            <label for="name">Name (required):</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            <label for="email">Email (required):</label>
-            <input type="text" name="email" id="email" placeholder="Enter your email" required>
-            <label for="photographer">Preferred Photographer (not required):</label>
-            <input type="text" name="photographer" id="photographer" placeholder="Enter a subject for your message">
+        <div id="contact">
+            <h1>Contact Us</h1>
+            <p>If you'd like to book a session or have any questions about our services or availability, please reach out through the form below.</p>
+            <form>
+                <div id="short-input">
+                    <label for="name">Name (required):</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <label for="email">Email (required):</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                    <label for="photographer">Preferred Photographer (not required):</label>
+                    <input type="text" name="photographer" id="photographer" placeholder="Enter a subject for your message">
+                </div>
+                <div id="long-input">
+                    <label for="message">Message (required):</label>
+                    <textarea name="message" id="message"  placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            <div id="contact-info">
+                <p>phone number</p>
+                <p>address</p>
+                <p>address</p>
             </div>
-            <label for="message">Message (required):</label>
-            <textarea name="message" id="message"  placeholder="Enter your message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>phone number</p>
-        <p>address</p>
-        <p>address</p>
+        </div>
     </main>
     <footer>
         <div class = footer-content>
