@@ -100,6 +100,10 @@ footer {
     object-fit: cover;
 }
 
+picture {
+    display: flex;
+}
+
 .text-content {
     margin: 2% 4% 4%;
     display: flex;
