@@ -37,11 +37,12 @@ h1 {
 header {
     background-color: var(--navbar);
     align-self: stretch;
-    height:6rem;
+    /* height: 7rem; */
 }
 
 nav{
     margin: auto;
+    height: 100%;
 }
 
 #navbar {
@@ -53,6 +54,11 @@ nav{
     margin: auto;
     padding: 16px;
     max-width: 1248px;
+    height: 100%;
+}
+
+#navbar li {
+    padding: .5rem 0;
 }
 
 #navbar a {
@@ -77,6 +83,7 @@ nav{
     #navbar {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(4, 1fr);
+        background-color: var(--navbar);
     }
     #navbar li {
         grid-row: 2 / 3;
@@ -262,20 +269,17 @@ h3 {
     justify-self: end;
     padding: 0;
     border-radius: 100%;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.75rem;
+    width: 1.75rem;
     padding: .25rem;
     order: 2;
 }
-.service-img button img {
-    height: 1rem;
-}
+/* .service-img button img {
+    height: 1.5rem;
+} */
 
 .service-img .left {
     justify-self: start;
-    height: 1.5rem;
-    width: 1.5rem;
-    padding: .25rem;
     order: 2;
 }
 .left img{
