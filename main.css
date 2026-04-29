@@ -45,9 +45,9 @@ nav{
 }
 
 #navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
     align-items: center;
     list-style: none;
     margin: auto;
@@ -68,6 +68,22 @@ nav{
 
 #logo {
     height: 4rem;
+}
+
+@media screen and (max-width: 475px) {
+    header {
+        height: 8.5rem;
+    }
+    #navbar {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #navbar li {
+        grid-row: 2 / 3;
+    }
+    #navbar #logo-item {
+        grid-area: 1 / 2 / span 1 / span 2;
+    }
 }
 
 /* Footer */
