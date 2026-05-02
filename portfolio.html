@@ -1,68 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Tessan Studio Photography</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://use.typekit.net/klr5wnl.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://use.typekit.net/klr5wnl.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul id="navbar">
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="photographers.html">photographers</a></li>
-                <li id="logo-item"><a href="index.html"><img id="logo" src="images/logo.svg" alt="Tessan Studio logo"></a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul id="navbar">
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="photographers.html">photographers</a></li>
+          <li id="logo-item">
+            <a href="index.html"
+              ><img id="logo" src="images/logo.svg" alt="Tessan Studio logo"
+            /></a>
+          </li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div id="portfolio">
-            <h1>Our Portfolio</h1>
-            <div id="portfolio-photos">
-                <button class="thumbnail" id="1" onclick="openFeature(this.id)"><img src="images/1.jpg" alt="A smiling shorthaired dog with one floppy ear on a brown backdrop"></button>
-                <button class="thumbnail" id="2" onclick="openFeature(this.id)"><img src="images/2.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="3" onclick="openFeature(this.id)"><img src="images/3.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="4" onclick="openFeature(this.id)"><img src="images/4.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="5" onclick="openFeature(this.id)"><img src="images/5.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="6" onclick="openFeature(this.id)"><img src="images/6.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="7" onclick="openFeature(this.id)"><img src="images/7.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="8" onclick="openFeature(this.id)"><img src="images/8.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="9" onclick="openFeature(this.id)"><img src="images/9.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="10" onclick="openFeature(this.id)"><img src="images/10.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="11" onclick="openFeature(this.id)"><img src="images/11.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="12" onclick="openFeature(this.id)"><img src="images/12.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="13" onclick="openFeature(this.id)"><img src="images/13.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="14" onclick="openFeature(this.id)"><img src="images/14.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="15" onclick="openFeature(this.id)"><img src="images/15.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="16" onclick="openFeature(this.id)"><img src="images/16.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="17" onclick="openFeature(this.id)"><img src="images/17.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="18" onclick="openFeature(this.id)"><img src="images/18.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="19" onclick="openFeature(this.id)"><img src="images/19.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="20" onclick="openFeature(this.id)"><img src="images/20.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="21" onclick="openFeature(this.id)"><img src="images/21.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="22" onclick="openFeature(this.id)"><img src="images/22.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="23" onclick="openFeature(this.id)"><img src="images/23.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="24" onclick="openFeature(this.id)"><img src="images/24.jpg" alt="photo of pet"></button>            
-                <button class="thumbnail" id="25" onclick="openFeature(this.id)"><img src="images/25.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="26" onclick="openFeature(this.id)"><img src="images/26.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="27" onclick="openFeature(this.id)"><img src="images/27.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="28" onclick="openFeature(this.id)"><img src="images/28.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="29" onclick="openFeature(this.id)"><img src="images/29.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="30" onclick="openFeature(this.id)"><img src="images/30.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="31" onclick="openFeature(this.id)"><img src="images/31.jpg" alt="photo of pet"></button>
-                <button class="thumbnail" id="32" onclick="openFeature(this.id)"><img src="images/32.jpg" alt="photo of pet"></button>
-            </div>
-            <div id="hidden"></div>
+      <div id="portfolio">
+        <h1>Our Portfolio</h1>
+        <div id="portfolio-photos">
+          <button class="thumbnail" id="1" onclick="openFeature(this.id)">
+            <img
+              src="images/1.jpg"
+              alt="A smiling shorthaired dog with one floppy ear on a brown backdrop"
+            />
+          </button>
+          <button class="thumbnail" id="2" onclick="openFeature(this.id)">
+            <img
+              src="images/2.jpg"
+              alt="A spotted dog sitting in front of a light green backdrop, holding a rope toy in its mouth"
+            />
+          </button>
+          <button class="thumbnail" id="3" onclick="openFeature(this.id)">
+            <img
+              src="images/3.jpg"
+              alt="A big, black dog laying on its stomach with some blurry pumpkins and leaves in the background"
+            />
+          </button>
+          <button class="thumbnail" id="4" onclick="openFeature(this.id)">
+            <img
+              src="images/4.jpg"
+              alt="A black and white borzoi standing in front of a grey background, smiling and looking into the camera"
+            />
+          </button>
+          <button class="thumbnail" id="5" onclick="openFeature(this.id)">
+            <img
+              src="images/5.jpg"
+              alt="Two black cats laying on their stomachs on a gray backdrop, the one on the left has white paws and a white spot on its chest and chin"
+            />
+          </button>
+          <button class="thumbnail" id="6" onclick="openFeature(this.id)">
+            <img src="images/6.jpg" alt="A Samoyed in nature, with yellow and green blurry background" />
+          </button>
+          <button class="thumbnail" id="7" onclick="openFeature(this.id)">
+            <img src="images/7.jpg" alt="A brown dog laying on a small leather couch with orange background" />
+          </button>
+          <button class="thumbnail" id="8" onclick="openFeature(this.id)">
+            <img src="images/8.jpg" alt="An Australian Shepherd puppy laying on its stomach, looking sideways, with white background />
+          </button>
+          <button class="thumbnail" id="9" onclick="openFeature(this.id)">
+            <img src="images/9.jpg" alt="A brown Dachshund laying on its back in a field of flowers" />
+          </button>
+          <button class="thumbnail" id="10" onclick="openFeature(this.id)">
+            <img src="images/10.jpg" alt="A Golden Retriever running on a field, holding a stick in its mouth" />
+          </button>
+          <button class="thumbnail" id="11" onclick="openFeature(this.id)">
+            <img src="images/11.jpg" alt="A Golden Retriever sitting in a field of flowers" />
+          </button>
+          <button class="thumbnail" id="12" onclick="openFeature(this.id)">
+            <img src="images/12.jpg" alt="A German Shepherd sitting in front of a lake and mountains with a service dog harness" />
+          </button>
+          <button class="thumbnail" id="13" onclick="openFeature(this.id)">
+            <img src="images/13.jpg" alt="A Bernese Mountain Dog laying on its stomach with an orange backdrop" />
+          </button>
+          <button class="thumbnail" id="14" onclick="openFeature(this.id)">
+            <img src="images/14.jpg" alt="A Golden Retriever sitting in front of a grey backdrop, wearing a collar and a bow" />
+          </button>
+          <button class="thumbnail" id="15" onclick="openFeature(this.id)">
+            <img src="images/15.jpg" alt="A German Shepherd puppy laying on its stomach on white backdrop" />
+          </button>
+          <button class="thumbnail" id="16" onclick="openFeature(this.id)">
+            <img src="images/16.jpg" alt="A Golden Retriever puppy running outside, holding a stick in its mouth" />
+          </button>
+          <button class="thumbnail" id="17" onclick="openFeature(this.id)">
+            <img src="images/17.jpg" alt="A Newfouldland Dog laying in leaves" />
+          </button>
+          <button class="thumbnail" id="18" onclick="openFeature(this.id)">
+            <img src="images/18.jpg" alt="A Staffordshire Terrier standing on a road in a forest" />
+          </button>
+          <button class="thumbnail" id="19" onclick="openFeature(this.id)">
+            <img src="images/19.jpg" alt="A German Shepherd puppy sitting in a field, looking up" />
+          </button>
+          <button class="thumbnail" id="20" onclick="openFeature(this.id)">
+            <img src="images/20.jpg" alt="A grey and white cat looking into the camera on a brown background" />
+          </button>
+          <button class="thumbnail" id="21" onclick="openFeature(this.id)">
+            <img src="images/21.jpg" alt="A Staffordshire Terrier sitting in front of flowers, wearing a checkered bandana" />
+          </button>
+          <button class="thumbnail" id="22" onclick="openFeature(this.id)">
+            <img src="images/22.jpg" alt="A German Spitz standing, with a blurry yellow background" />
+          </button>
+          <button class="thumbnail" id="23" onclick="openFeature(this.id)">
+            <img src="images/23.jpg" alt="Two dogs sitting on a stone fence, a light brown with long fur on the left and a dark grey with its tongue out on the right" />
+          </button>
+          <button class="thumbnail" id="24" onclick="openFeature(this.id)">
+            <img src="images/24.jpg" alt="A dark grey cat sitting, looking up, with white backdrop" />
+          </button>
+          <button class="thumbnail" id="25" onclick="openFeature(this.id)">
+            <img src="images/25.jpg" alt="A German Shepherd laying on the road with blurry brown background" />
+          </button>
+          <button class="thumbnail" id="26" onclick="openFeature(this.id)">
+            <img src="images/26.jpg" alt="A Newfouldland Dog standing on grass wearing a pair of butterfly wings" />
+          </button>
+          <button class="thumbnail" id="27" onclick="openFeature(this.id)">
+            <img src="images/27.jpg" alt="Two French Bulldogs sitting on a white furry pillow" />
+          </button>
+          <button class="thumbnail" id="28" onclick="openFeature(this.id)">
+            <img src="images/28.jpg" alt="Two brown dogs on a brown leather couch, tha left is laying the right is sitting" />
+          </button>
+          <button class="thumbnail" id="29" onclick="openFeature(this.id)">
+            <img src="images/29.jpg" alt="A Golden Retriever puppy laying on a field with a blurry forest background" />
+          </button>
+          <button class="thumbnail" id="30" onclick="openFeature(this.id)">
+            <img src="images/30.jpg" alt="An Australian Shepherd sitting, holding its right front paw up, with white background" />
+          </button>
+          <button class="thumbnail" id="31" onclick="openFeature(this.id)">
+            <img src="images/31.jpg" alt="A brown and white spotted English Setter sitting outside, smiling" />
+          </button>
+          <button class="thumbnail" id="32" onclick="openFeature(this.id)">
+            <img src="images/32.jpg" alt="A white and brown puppy laying on a white couch wearing a rainbow bandana, with a rainbow in the background" />
+          </button>
         </div>
+        <div id="hidden"></div>
+      </div>
     </main>
     <footer>
-        <div class = footer-content>
-            <p>&copy; Tessan Studio 2026</p>
-        </div>
+      <div class="footer-content">
+        <p>&copy; Tessan Studio 2026</p>
+      </div>
     </footer>
-</body>
+  </body>
+</html>
